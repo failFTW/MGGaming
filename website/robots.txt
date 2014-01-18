@@ -1,3 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /mc-survival/ranks//
+
+#Begin Attracta SEO Tools Sitemap. Do not remove
+sitemap: http://cdn.attracta.com/sitemap/3112494.xml.gz
+#End Attracta SEO Tools Sitemap. Do not remove

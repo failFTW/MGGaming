@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <!-- 404 Page :P -->
+<head>
+<title>Oops! 404!</title>
+<style>
+h1 {text-align:center;}
+</style>
+<script type="text/javascript">
+function sb3_makeArray(n){
+	this.length = n;
+	return this.length;
+}
+
+sb3_messages = new sb3_makeArray(7);
+sb3_messages[0] = "404";
+sb3_messages[1] = "LOL";
+sb3_messages[2] = "Herp";
+sb3_messages[3] = "Page not Found";
+sb3_messages[4] = "Derp";
+sb3_messages[5] = "XD";
+sb3_messages[6] = ":3";
+sb3_rptType = 'infinite';
+sb3_rptNbr = 5;
+sb3_speed = 70;
+sb3_nbrOneMsg = 5;
+var sb3_currMsg=0;
+var sb3_timerID = null;
+var sb3_switcher = 0;
+var sb3_countOneMsg=0;
+var sb3_counter=1;
+function sb3_blinkStatus(){
+if (sb3_countOneMsg == sb3_nbrOneMsg){
+	if (sb3_currMsg == sb3_messages.length-1){
+		if ((sb3_rptType == 'finite') && (sb3_counter==sb3_rptNbr)){
+			clearTimeout(sb3_timerID);
+			return;
+		}
+		sb3_counter++;
+		sb3_currMsg=0;
+		sb3_countOneMsg=0;
+	}
+	else{
+		sb3_currMsg++;
+		sb3_countOneMsg=0;
+	}
+}
+if (sb3_switcher==0){
+	window.status = sb3_messages[sb3_currMsg];
+	sb3_switcher=1;	
+	sb3_countOneMsg++;
+}
+else{
+	window.status = "";
+	sb3_switcher=0;
+}
+sb3_timerID = setTimeout("sb3_blinkStatus()", sb3_speed)
+}
+sb3_blinkStatus();
+</script>
+</head>
+<body bgcolor="#93FA4F" text="#007C06" link="black" vlink="#546E5F">
+<h1>404 D:</h1><center>The page you requested (<!--#echo var="REQUEST_URI" -->) is not completed (or missing), please come back later!</center>
+<br>
+    <center><a href="javascript:history.go(-1)" title="Go back to the page you were just on">Go Back</a>  Or <a href="http://mggaming.net/pong" title="Play some Pong!">Play some Pong!</a></center><br>
+<center><img src="http://mggaming.net/imgs/404.jpg"></center><center><h2>While you wait, why not join our server? Or <a href="http://mcservers.org/detail/mc.mggaming.net" title="Vote for MGGSurvival!">Vote for MGGSurvival!</a></h2>
+<a href="http://mcservers.org/detail/mc.mggaming.net" title="MGGSurvival!"><img src="http://mcservers.org/images/mc.mggaming.net/600x100_07.jpg" alt="mc.mggaming.net" /></a><br><br>
+Your IP: <!--#echo var="REMOTE_ADDR" --> <br>
+Your Browser: <!--#echo var="HTTP_USER_AGENT" --> <br>
+Requested URL: <!--#echo var="REQUEST_URI" --> <br>
+Referring URL: <!--#echo var="HTTP_REFERER" --> <br>
+Server Name: <!--#echo var="HTTP_HOST" --> <br>
+Redirect Status Code: <!--#echo var="REDIRECT_STATUS" --> <br>
+
+</center>
+</body>

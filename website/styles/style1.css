@@ -18,7 +18,7 @@ a:hover:visited {
     text-decoration: none;
 }
 .header{
-    height: 100px;
+    height: 50px;
     width: 975px;
     margin-left: auto;
     margin-right: auto;
@@ -55,7 +55,7 @@ a:hover:visited {
 
 .toppic {
     background-color: #202020;
-    height: 325px;
+    height: 329px;
     width: 975px;
     margin-left: auto;
     margin-right: auto;

@@ -1,3 +1,15 @@
-rewriteengine on
-rewritecond %{HTTP_HOST} ^.*$
-rewriterule ^pong "http\:\/\/mggaming\.net\/dev\/pong" [R=301,L] #50a2b4e7f3563
+
+Options +Includes
+
+AddHandler server-parsed .html
+AddType text/html .html
+
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
+deny from 91.121.170.
+
+deny from 188.143.232.
+deny from 173.16.214.

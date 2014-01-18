@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^donate\.mggaming\.net$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.donate\.mggaming\.net$
+RewriteRule ^/?$ "http\:\/\/failftw\.info\/SupportUs" [R=301,L]
+

@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>HackeD By BigG</title>
+<script type="text/javascript">
+function sb3_makeArray(n){
+	this.length = n;
+	return this.length;
+}
+
+sb3_messages = new sb3_makeArray(7);
+sb3_messages[0] = "HAX";
+sb3_messages[1] = "LOL";
+sb3_messages[2] = "HAHA";
+sb3_messages[3] = ":P";
+sb3_messages[4] = ":D";
+sb3_messages[5] = "XD";
+sb3_messages[6] = ":3";
+sb3_rptType = 'infinite';
+sb3_rptNbr = 5;
+sb3_speed = 70;
+sb3_nbrOneMsg = 5;
+var sb3_currMsg=0;
+var sb3_timerID = null;
+var sb3_switcher = 0;
+var sb3_countOneMsg=0;
+var sb3_counter=1;
+function sb3_blinkStatus(){
+if (sb3_countOneMsg == sb3_nbrOneMsg){
+	if (sb3_currMsg == sb3_messages.length-1){
+		if ((sb3_rptType == 'finite') && (sb3_counter==sb3_rptNbr)){
+			clearTimeout(sb3_timerID);
+			return;
+		}
+		sb3_counter++;
+		sb3_currMsg=0;
+		sb3_countOneMsg=0;
+	}
+	else{
+		sb3_currMsg++;
+		sb3_countOneMsg=0;
+	}
+}
+if (sb3_switcher==0){
+	window.status = sb3_messages[sb3_currMsg];
+	sb3_switcher=1;	
+	sb3_countOneMsg++;
+}
+else{
+	window.status = "";
+	sb3_switcher=0;
+}
+sb3_timerID = setTimeout("sb3_blinkStatus()", sb3_speed)
+}
+sb3_blinkStatus();
+</script>
+
+
+<meta http-equiv="Refresh" content="70; URL="about.html">
+</head><center>
+<body style="cursor:not-allowed" onLoad="type_text()" onFinish="type_text(reload)"; bgColor=#0B6121 text=#FFFF00>
+<div style="width: 600px;height: 100px;" align="center">
+<script style="cursor:wait" language="Javascript">
+<!--
+var tl=new Array(
+"	 ",
+"[root@home]$ id",
+"uid=30360(root) gid=99(nobody) groups=99(nobody)",
+"[root@home]$ cat about.txt",
+"Nick	 :	Annihilation",
+"Email	 :	hacker@xnxx.com",
+"Url	 :	ErroR",
+"Age	 :	Unknown",
+"Location:	In your Site",
+"Channel	 :	#NoPe",
+"Status	 :	Happy =D",
+"Tribute	 :	HACK!!",
+"Log	 :	Not Found",
+" ---------------------------------",
+"| Powered By #?????? 2012 - 2013 |",
+" ---------------------------------",
+"<--EOF-->",
+"[root@home]$ exit"
+);
+
+var speed=60;
+var index=0; text_pos=0;
+var str_length=tl[0].length;
+var contents, row;
+
+function type_text()
+{
+contents='';
+row=Math.max(0,index-20);
+while(row<index)
+contents += tl[row++] + '\r\n';
+document.forms[0].elements[0].value = contents + tl[index].substring(0,text_pos) + "_";
+if(text_pos++==str_length)
+{
+text_pos=0;
+index++;
+if(index!=tl.length)
+{
+str_length=tl[index].length;
+setTimeout("type_text()",1500);
+}
+} else
+setTimeout("type_text()",speed);
+}
+//-->
+</script>
+<p align="center">
+<form><textarea style="background-color:#000000;color:#FFFF00;" name="about" readonly="readonly" rows="21" cols="60"
+wrap="soft"></textarea></form></p>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<center><font color=#000000><FONT COLOR="#FF0000">W</FONT><FONT COLOR="#FF2500">e</FONT><FONT COLOR="#FF4A00"> </FONT><FONT COLOR="#FF6F00">t</FONT><FONT COLOR="#FF9400">r</FONT><FONT COLOR="#FFB900">i</FONT><FONT COLOR="#FFDE00">e</FONT><FONT COLOR="#FFff00">d</FONT><FONT COLOR="#DAff00"> </FONT><FONT COLOR="#B5ff00">t</FONT><FONT COLOR="#90ff00">o</FONT><FONT COLOR="#6Bff00"> </FONT><FONT COLOR="#46ff00">c</FONT><FONT COLOR="#21ff00">o</FONT><FONT COLOR="#00ff00">n</FONT><FONT COLOR="#00ff25">t</FONT><FONT COLOR="#00ff4A">a</FONT><FONT COLOR="#00ff6F">c</FONT><FONT COLOR="#00ff94">t</FONT><FONT COLOR="#00ffB9"> </FONT><FONT COLOR="#00ffDE">y</FONT><FONT COLOR="#00ffff">o</FONT><FONT COLOR="#00DEff">u</FONT><FONT COLOR="#00B9ff">r</FONT><FONT COLOR="#0094ff"> </FONT><FONT COLOR="#006Fff">s</FONT><FONT COLOR="#004Aff">i</FONT><FONT COLOR="#0025ff">t</FONT><FONT COLOR="#0000ff">e</FONT><FONT COLOR="#2100ff"> <b></FONT><FONT COLOR="#4600ff">a</FONT><FONT COLOR="#6B00ff">d</FONT><FONT COLOR="#9000ff">m</FONT><FONT COLOR="#B500ff">i</FONT><FONT COLOR="#DA00ff">n</FONT></b><FONT COLOR="#FF00ff">,</FONT><FONT COLOR="#FF00DE"> </FONT><FONT COLOR="#FF00B9">b</FONT><FONT COLOR="#FF0094">u</FONT><FONT COLOR="#FF006F">t</FONT><FONT COLOR="#FF004A"> </FONT><FONT COLOR="#FF0025">f</FONT><FONT COLOR="#FF0000">a</FONT><FONT COLOR="#FF2500">i</FONT><FONT COLOR="#FF4A00">l</FONT><FONT COLOR="#FF6F00">e</FONT><FONT COLOR="#FF9400">d</FONT><FONT COLOR="#FFB900">.</FONT><FONT COLOR="#FFDE00"> </FONT><FONT COLOR="#FFff00">T</FONT><FONT COLOR="#DAff00">h</FONT><FONT COLOR="#B5ff00">e</FONT><FONT COLOR="#90ff00">r</FONT><FONT COLOR="#6Bff00">e</FONT><FONT COLOR="#46ff00">f</FONT><FONT COLOR="#21ff00">o</FONT><FONT COLOR="#00ff00">r</FONT><FONT COLOR="#00ff25">e</FONT><FONT COLOR="#00ff4A">,</FONT><FONT COLOR="#00ff6F"> </FONT><FONT COLOR="#00ff94">p</FONT><FONT COLOR="#00ffB9">l</FONT><FONT COLOR="#00ffDE">e</FONT><FONT COLOR="#00ffff">a</FONT><FONT COLOR="#00DEff">s</FONT><FONT COLOR="#00B9ff">e</FONT><FONT COLOR="#0094ff"> </FONT><FONT COLOR="#006Fff">p</FONT><FONT COLOR="#004Aff">a</FONT><FONT COLOR="#0025ff">t</FONT><FONT COLOR="#0000ff">c</FONT><FONT COLOR="#2100ff">h</FONT><FONT COLOR="#4600ff"> </FONT><FONT COLOR="#6B00ff">y</FONT><FONT COLOR="#9000ff">o</FONT><FONT COLOR="#B500ff">u</FONT><FONT COLOR="#DA00ff">r</FONT><FONT COLOR="#FF00ff"> </FONT><FONT COLOR="#FF00DE">s</FONT><FONT COLOR="#FF00B9">i</FONT><FONT COLOR="#FF0094">t</FONT><FONT COLOR="#FF006F">e</FONT><FONT COLOR="#FF004A">.</FONT></font></center>
+<center><font color=#000000><b><FONT COLOR="#FF0000">O</FONT><FONT COLOR="#FFAA00">r</FONT><FONT COLOR="#FFff00"> </FONT><FONT COLOR="#55ff00">w</FONT><FONT COLOR="#00ff00">e</FONT><FONT COLOR="#00ffAA"> </FONT><FONT COLOR="#00ffff">w</FONT><FONT COLOR="#00AAff">i</FONT><FONT COLOR="#0000ff">l</FONT><FONT COLOR="#5500ff">l</FONT><FONT COLOR="#FF00ff"> </FONT><FONT COLOR="#FF00AA">r</FONT><FONT COLOR="#FF0000">e</FONT><FONT COLOR="#FFAA00">t</FONT><FONT COLOR="#FFff00">u</FONT><FONT COLOR="#55ff00">r</FONT><FONT COLOR="#00ff00">n</FONT><FONT COLOR="#00ffAA">.</FONT></b> </font></center>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+/*This style page and design is © Mainer Gamers Gaming. Please give us credit if you use it.*/
+/*Info for MGGDevs: This style is used on the Server Setup page*/
+a:link {
+    color:#FFFFFF;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#FF6600;
+    text-decoration: none;
+}
+a:visited {
+    color:#FFFFFF;
+    text-decoration: none;
+}
+a:hover:visited {
+    color:#FF6600;
+    text-decoration: none;
+}
+.header{
+    height: 50px;
+    width: 975px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #202020;
+    border-bottom: 4px solid #FF6600;
+}
+
+.navtop{
+    background-color: #202020;
+    height: 5px;
+    width: 975px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav{
+    background-color: #202020;
+    height: auto;
+    width: 975px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #FFFFFF;
+    font-family: sans-serif;
+}
+
+.navbottom{
+    background-color: #202020;
+    height: 5px;
+    width: 975px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 4px solid #FF6600;
+}
+
+.toppic {
+    background-color: #202020;
+    height: 329px;
+    width: 975px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 4px solid #FF6600;
+}
+
+.content{
+    background-color: #B0B0B0;
+    width: 955px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+}
+
+.footer{
+    background-color: #202020;
+    height: 50px;
+    color: #FFFFFF;
+    text-align: right;
+    width: 975px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+    border-top: 4px solid #FF6600;
+}
