@@ -6,12 +6,12 @@
     </head>
     <body onload='colorize();' bgcolor="#202020">
         
-        <?php include "../includes/header.php" ?>
+        <?php set_include_path("/home/mggaming/public_html/includes"); include "header.php" ?>
         <div class="navtop">
             
         </div>
         <div class="nav">
-            <?php include "../includes/topnav.php" ?>
+            <?php include "topnav.php" ?>
         </div>
         <div class="navbottom">
             
@@ -21,17 +21,17 @@
         </div> -->
     
     <div class="content">
-        <?php include "../includes/notice.php" ?>
+        <?php include "notice.php" ?>
         <center>
             <H1><font size="5px" color="#383838">Fail_ftderp's Livestream</H1>
             <b><font color="#3A01DF" size="3px">Click <a href="schedule" title="Fail_FTDerp's schedule n stoff" >here</a> for my schedule</font></b>
             <hr width=90%></font>
             <iframe src="http://cdn.livestream.com/embed/fail_ftderp?layout=3&autoPlay=true&width=970&height=450" width="970" height="450" style="border:0;outline:0" frameborder=0 scrolling=no></iframe>
             <br>
-            <?php include "../includes/ads.php" ?>
+            <?php include "ads.php" ?>
     </div>
     <div class="footer">
-        <?php include "../includes/footer.php" ?>
+        <?php include "footer.php" ?>
     </div>
     
     </body>

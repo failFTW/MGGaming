@@ -6,12 +6,12 @@
     </head>
     <body onload='colorize();' bgcolor="#202020">
         
-        <?php include "/home/mggaming/public_html/includes/header.php" ?>
+        <?php set_include_path("/home/mggaming/public_html/includes"); include "header.php" ?>
         <div class="navtop">
             
         </div>
         <div class="nav">
-            <?php include "/home/mggaming/public_html/includes/topnav.php" ?>
+            <?php include "topnav.php" ?>
         </div>
         <div class="navbottom">
             
@@ -22,7 +22,7 @@
             
         </div>
     <div class="content">
-        <?php include "/home/mggaming/public_html/includes/notice.php" ?>
+        <?php include "notice.php" ?>
         <br>
         <font size="5px" color="#383838">&nbsp;&nbsp;&nbsp;<H1>Apply for Staff</H1><br></font>
 <!-- Form Start -->
@@ -132,7 +132,7 @@ function removeSpaces(string) {
 </script></center>
     </div>
     <div class="footer">
-        <?php include "/home/mggaming/public_html/includes/footer.php" ?>
+        <?php include "footer.php" ?>
     </div>
     
     </body>

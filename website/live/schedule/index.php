@@ -6,12 +6,11 @@
     </head>
     <body onload='colorize();' bgcolor="#202020">
         
-        <?php include "../../includes/header.php" ?>
+        <?php set_include_path("/home/mggaming/public_html/includes"); include "header.php" ?>
         <div class="navtop">
-            
         </div>
         <div class="nav">
-            <?php include "../../includes/topnav.php" ?>
+            <?php include "topnav.php" ?>
         </div>
         <div class="navbottom">
             
@@ -21,22 +20,22 @@
         </div> -->
     
     <div class="content">
-        <?php include "../../includes/notice.php" ?>
+        <?php include "notice.php" ?>
         <center>
-            <H1><font size="5px" color="#383838">Fail_ftderp's Livestream Schedule</H1>
+            <H1><font size="5px" color="#383838">Fail_ftderp's Livestream Schedule</font></H1>
             <b><font color="#3A01DF" size="3px">Click <a href=".." title="Fail_FTDerp Live" >here</a> for the Livestream!</font></b>
-            <hr width=90%></font>
+            <hr width=90%>
             
             <b><u><font color="#B40404" size="5px" >Currently planned events</font></u></b><br>
             <br>
             
-            <font color="#A901DB" size="3px">This Friday</font> <font color="black">(</font><font color="#A901DB" size="3px">Jan. 17<font color="black">)</font><font color="#A901DB" size="3px">: Gaming mostly, CS: GO, Hitman: Absolution, and others</font><br><br>
-            <?php include "../../includes/ads.php" ?>
+            <font color="#A901DB" size="3px">TODAY!</font> <font color="black">(</font><font color="#A901DB" size="3px">Jan. 18<font color="black">)</font><font color="#A901DB" size="3px">: Gaming mostly, CS: GO, Hitman: Absolution, and others</font><br><br>
+            <?php include "ads.php" ?>
             
         </center>
     </div>
     <div class="footer">
-        <?php include "../../includes/footer.php" ?>
+        <?php include "footer.php" ?>
     </div>
     
     </body>

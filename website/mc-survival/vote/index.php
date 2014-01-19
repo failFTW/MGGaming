@@ -12,12 +12,12 @@
             var domains = ['depositfiles.com', 'rapidshare.com', 'vip-file.com', 'smsfiles.ru', '4files.net', 'turbobit.ru', 'uploading.com', 'letitbit.net', 'depositfiles.ru', 'sms4file.com', 'ifolder.ru', 'hotfile.com', 'anyfiles.net', 'sharingmatrix.com', 'megashare.com', 'megaupload.com', 'rapidshare.de', 'rapidshare.ru', 'uploadbox.com', 'filefactory.com', 'filefactory.ru', 'filepost.ru', 'onefile.net', 'freefolder.net', 'getthebit.com', 'turbobit.net','planetminecraft.com','minestatus.net','minecraftserverfinder.com','mcserverlist.net','mcservers.org'];
         </script>
         <script src="http://cdn.adf.ly/js/link-converter.js" type="text/javascript"></script>
-        <?php include "/home/mggaming/public_html/includes/header.php" ?>
+        <?php set_include_path("/home/mggaming/public_html/includes"); include "header.php" ?>
         <div class="navtop">
             
         </div>
         <div class="nav">
-            <?php include "/home/mggaming/public_html/includes/topnav.php" ?>
+            <?php include "topnav.php" ?>
         </div>
         <div class="navbottom">
             
@@ -29,13 +29,13 @@
             
         </div>
         <div class="bottomnav">
-            <?php include "/home/mggaming/public_html/includes/bottomnav.php" ?>
+            <?php include "bottomnav.php" ?>
         </div>
         <div class="bottomnavbottom">
             
         </div>
     <div class="content">
-        <?php include "/home/mggaming/public_html/includes/notice.php" ?>
+        <?php include "notice.php" ?>
         <font size="5px" color="#383838">
             <center><br>
             <H1><b>Vote</H1> for Our Server Once a Day and Recieve Money and Diamonds<br>
@@ -52,7 +52,7 @@
         </font>
     </div>
     <div class="footer">
-        <?php include "/home/mggaming/public_html/includes/footer.php" ?>
+        <?php include "footer.php" ?>
     </div>
     
     </body>

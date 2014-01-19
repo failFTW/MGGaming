@@ -6,19 +6,12 @@
     </head>
     <body bgcolor="#202020">
         
-        <?php include "/home/mggaming/public_html/includes/header.php" ?>
+        <?php set_include_path("/home/mggaming/public_html/includes"); include "header.php" ?>
         <div class="navtop">
             
         </div>
         <div class="nav">
-            <center>
-                <a href="http://failftw.info/" title="Home">Home&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                <a href="/about/" title="About MGG">&nbsp;&nbsp;&nbsp;&nbsp;About MGG&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                <font color="#FF6600">&nbsp;&nbsp;&nbsp;&nbsp;Appeal Bans&nbsp;&nbsp;&nbsp;&nbsp;</font>
-                <a href="/mc-survival" title="MGGSurvival">&nbsp;&nbsp;&nbsp;&nbsp;MGGSurvival&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                <a href="/SupportUs/#SupportUs" title="Support Us!">&nbsp;&nbsp;&nbsp;&nbsp;Support Us&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                <font color=#FF0000><a href="http://forums.failftw.info" title="MGGForums!">&nbsp;&nbsp;&nbsp;&nbsp;Forums&nbsp;&nbsp;&nbsp;&nbsp;</a></font>
-            </center>
+            <?php include "topnav.php" ?>
         </div>
         <div class="navbottom">
             
@@ -27,7 +20,7 @@
             <center><img src=/imgs/banner.png title="MGGaming" /></center>
         </div>
     <div class="content">
-        <?php include "/home/mggaming/public_html/includes/notice.php" ?>
+        <?php include "notice.php" ?>
         <br>
           <center>
             <h1>Your Ban Appeal has been sent. It will be reviewed ASAP.</h1><br>
@@ -43,7 +36,7 @@
           </center>
     </div>
     <div class="footer">
-        <?php include "/home/mggaming/public_html/includes/footer.php" ?>
+        <?php include "footer.php" ?>
     </div>
     
     </body>

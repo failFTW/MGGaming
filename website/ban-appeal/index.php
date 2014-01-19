@@ -1,26 +1,25 @@
 <!DOCTYPE html>
     <!-- MGGS Ban Appeal page -->
-    <head><link href="/styles/style2.css" type="text/css" rel="stylesheet"><title>Appeal a Ban | MGGaming</title>
-        <meta name="description" content="Minecraft Servers for Everyone! EPIC!">
+    <head>
+        <link href="/styles/style2.css" type="text/css" rel="stylesheet">
+        <title>Appeal a Ban | MGGaming</title>
+        <meta name="description" content="Appeal a ban here!">
         <meta name="keywords" content="ban appeal,minecraft servers,minecraft multiplayer servers,minecraft severs,best minecraft servers,minecraft survival server,minecraft multiplayer server,MGG">
     </head>
     <body bgcolor="#202020">
-        
-        <?php include "/home/mggaming/public_html/includes/header.php" ?>
+        <?php set_include_path("/home/mggaming/public_html/includes"); include "header.php" ?>
         <div class="navtop">
-            
         </div>
         <div class="nav">
-            <?php include "/home/mggaming/public_html/includes/topnav.php" ?>
+            <?php include "topnav.php" ?>
         </div>
         <div class="navbottom">
-            
         </div>
         <div class="toppic">
-            <center><img src=/imgs/banner.png title="MGGaming" /></center>
+            <img src=/imgs/banner.png title="MGGaming" />
         </div>
     <div class="content">
-        <?php include "/home/mggaming/public_html/includes/notice.php" ?>
+        <?php include "notice.php" ?>
         <br>
         <font size="5px" color="#383838">&nbsp;&nbsp;&nbsp;<H1>Appeal a Local Ban</H1><br></font>
 <!-- Form Start -->
@@ -66,7 +65,7 @@ frmvalidator.addValidation("email","email","Please enter a valid email address")
 <!-- Form end -->
     </div>
     <div class="footer">
-        <?php include "/home/mggaming/public_html/includes/footer.php" ?>
+        <?php include "footer.php" ?>
     </div>
     
     </body>

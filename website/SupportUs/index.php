@@ -7,12 +7,12 @@
     </head>
     <body onload='colorize();' bgcolor="#202020">
         
-        <?php include "/home/mggaming/public_html/includes/header.php" ?>
+        <?php set_include_path("/home/mggaming/public_html/includes"); include "header.php" ?>
         <div class="navtop">
             
         </div>
         <div class="nav">
-            <?php include "/home/mggaming/public_html/includes/topnav.php" ?>
+            <?php include "topnav.php" ?>
         </div>
         <div class="navbottom">
               
@@ -21,7 +21,7 @@
             <center><img src=/imgs/banner.png title="MGGaming" /></center>
         </div>
     <div class="content">
-        <?php include "/home/mggaming/public_html/includes/notice.php" ?>
+        <?php include "notice.php" ?>
         <script type="text/javascript"> 
     var adfly_id = 5222804; 
     var adfly_advert = 'int'; 
@@ -72,7 +72,7 @@
         </font></center>
     </div>
     <div class="footer">
-        <?php include "/home/mggaming/public_html/includes/footer.php" ?>
+        <?php include "footer.php" ?>
     </div>
     
     </body>

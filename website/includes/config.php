@@ -4,9 +4,7 @@ if(eregi($file,$_SERVER['REQUEST_URI'])) {
     die("Sorry but you cannot access this file directly for security reasons.");
 }
 ?>
-
 <?php
-$ip = $_SERVER['REMOTE_ADDR'];
 
 $user_agent     =   $_SERVER['HTTP_USER_AGENT'];
 
@@ -56,7 +54,7 @@ function getBrowser() {
 
     global $user_agent;
 
-    $browser        =   "Unknown Browser";
+    $browser        =   "Unknown";
 
     $browser_array  =   array(
                             '/msie/i'       =>  'IE',
@@ -82,11 +80,11 @@ function getBrowser() {
 
 }
 
-
+$ip = $_SERVER['REMOTE_ADDR'];
 $user_os        =   getOS();
 $user_browser   =   getBrowser();
+$hostname = gethostbyaddr($ip);
 
-
-
+$user_info = '<font color="#FF6600" size="1px">You are using</font><font color="red" size="1px" title="' . $user_agent . '"> ' . $user_browser . '</font><font color="#FF6600" size="1px"> on </font> <font color="red" size="1px">' . $user_os . '</font><font color="#FF6600" size="1px">. Your IP: </font><font color="red" size="1px" title="' . $hostname . '"> ' . $ip . '</font>'
 
 ?>

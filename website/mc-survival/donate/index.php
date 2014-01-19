@@ -6,12 +6,12 @@
     </head>
     <body onload='colorize();' bgcolor="#202020">
         
-        <?php include "/home/mggaming/public_html/includes/header.php" ?>
+        <?php set_include_path("/home/mggaming/public_html/includes"); include "header.php" ?>
         <div class="navtop">
             
         </div>
         <div class="nav">
-            <?php include "/home/mggaming/public_html/includes/topnav.php" ?>
+            <?php include "topnav.php" ?>
         </div>
         <div class="navbottom">
             
@@ -23,13 +23,13 @@
             
         </div>
         <div class="bottomnav">
-            <?php include "/home/mggaming/public_html/includes/bottomnav.php" ?>
+            <?php include "bottomnav.php" ?>
         </div>
         <div class="bottomnavbottom">
             
         </div>
     <div class="content">
-        <?php include "/home/mggaming/public_html/includes/notice.php" ?>
+        <?php include "notice.php" ?>
         <font size="5px" color="#383838">
             <center><br>
             <H1>Donate to help us do more!</H1></center>
@@ -313,7 +313,7 @@
         &nbsp;&nbsp;&nbsp;&nbsp;** Armor kits: Level 1: Normal iron armor; Level 2: Enchanted iron armor; Level 3: Diamond armor.<br><br></font>
     </div>
     <div class="footer">
-        <?php include "/home/mggaming/public_html/includes/footer.php" ?>
+        <?php include "footer.php" ?>
     </div>
     
     </body>
